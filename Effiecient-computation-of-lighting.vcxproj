@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77A977D5-0291-4EA1-9E37-30DB86DF2F23}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Effiecientcomputationoflighting</RootNamespace>
+    <ProjectName>ECL</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>ECL</TargetName>
+    <IncludePath>.\include;$(IncludePath)</IncludePath>
+    <SourcePath>.\src;$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <ExtensionsToDeleteOnClean>*.log;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+    <IntDir>$(SolutionDir)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(VC_ReferencesPath_x64);</ReferencePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;freeglut.lib;glfw3dll.lib;assimp.lib;CORE_RL_Magick++_.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glfw3dll.lib;assimp.lib;AntTweakBar64.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)\release-libs\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ECL.cpp" />
+    <ClCompile Include="src\buffers\g-buffer\GBuffer.cpp" />
+    <ClCompile Include="src\lighting\tiled\Grid.cpp" />
+    <ClCompile Include="src\scene\camera\Camera.cpp" />
+    <ClCompile Include="src\scene\objloader\Mesh.cpp" />
+    <ClCompile Include="src\shader\Shader.cpp" />
+    <ClCompile Include="src\shader\ShaderProgram.cpp" />
+    <ClCompile Include="src\textures\Texture.cpp" />
+    <ClCompile Include="src\utils\timers\PerformanceTimer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\buffers\g-buffer\GBuffer.h" />
+    <ClInclude Include="include\buffers\ubo\Buffer.h" />
+    <ClInclude Include="include\collision\SSBB.h" />
+    <ClInclude Include="include\configuration\Config.h" />
+    <ClInclude Include="include\configuration\Enums.h" />
+    <ClInclude Include="include\configuration\Types.h" />
+    <ClInclude Include="include\lighting\lights\PointLight.h" />
+    <ClInclude Include="include\lighting\tiled\Grid.h" />
+    <ClInclude Include="include\scene\camera\Camera.h" />
+    <ClInclude Include="include\scene\objloader\Mesh.h" />
+    <ClInclude Include="include\shaders\Shader.h" />
+    <ClInclude Include="include\shaders\ShaderProgram.h" />
+    <ClInclude Include="include\textures\Texture.h" />
+    <ClInclude Include="include\utils\timers\PerformanceTimer.h" />
+    <ClInclude Include="include\utils\timers\Win32ApiWrapper.h" />
+    <ClInclude Include="include\utils\Utils.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\affected_tiles_frag.glsl" />
+    <None Include="shaders\deferred_frag.glsl" />
+    <None Include="shaders\deferred_vert.glsl" />
+    <None Include="shaders\light_heat_map_frag.glsl" />
+    <None Include="shaders\simple_frag.glsl" />
+    <None Include="shaders\simple_vert.glsl" />
+    <None Include="shaders\tiled_deferred_frag.glsl" />
+    <None Include="shaders\minmaxdepth.glsl" />
+    <None Include="shaders\mrt_frag.glsl" />
+    <None Include="shaders\mrt_vert.glsl" />
+    <None Include="shaders\quad_frag.glsl" />
+    <None Include="shaders\quad_vert.glsl" />
+    <None Include="shaders\quad_depth_frag.glsl" />
+    <None Include="shaders\quad_depth_vert.glsl" />
+    <None Include="shaders\stencil_vert.glsl" />
+    <None Include="shaders\tiled_forward_frag.glsl" />
+    <None Include="shaders\tiled_forward_vert.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Effiecient-computation-of-lighting.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

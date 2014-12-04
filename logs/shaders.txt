@@ -1,0 +1,170 @@
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/mrt_vert.glsl
+shaders/mrt_frag.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/mrt_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/mrt_frag.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/stencil_vert.glsl
+shaders/deferred_frag.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/stencil_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/deferred_frag.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/quad_vert.glsl
+shaders/quad_frag.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/quad_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/quad_frag.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/quad_depth_vert.glsl
+shaders/quad_depth_frag.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/quad_depth_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/quad_depth_frag.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/deferred_vert.glsl
+shaders/minmaxdepth.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/deferred_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/minmaxdepth.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/simple_vert.glsl
+shaders/simple_frag.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/simple_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/simple_frag.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/deferred_vert.glsl
+shaders/tiled_deferred_frag.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/deferred_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/tiled_deferred_frag.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/tiled_forward_vert.glsl
+shaders/tiled_forward_frag.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/tiled_forward_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/tiled_forward_frag.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/deferred_vert.glsl
+shaders/light_heat_map_frag.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/deferred_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/light_heat_map_frag.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+
+***********************************************
+Attempting to create shader from files:
+-----------------------------------------------
+shaders/deferred_vert.glsl
+shaders/affected_tiles_frag.glsl
+-----------------------------------------------
+Shader program type:	vertex + fragment
+----------------------------------------------
+Loading vertex shader file:	shaders/deferred_vert.glsl
+File successfully loaded
+----------------------------------------------
+Loading fragment shader file:	shaders/affected_tiles_frag.glsl
+File successfully loaded
+-----------------------------------------------
+Shader program successfully created
+***********************************************
+

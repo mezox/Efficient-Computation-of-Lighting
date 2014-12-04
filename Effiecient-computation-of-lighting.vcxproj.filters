@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{c9ad6c95-9fb8-45bb-966f-50b917be46f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lighting">
+      <UniqueIdentifier>{354b14c9-2556-4833-a7fb-fa68a092d234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Deferred shading">
+      <UniqueIdentifier>{3343df8e-b3d0-4c69-986d-17a7c7a3ba97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Deferred shading\Multiple Render Targets">
+      <UniqueIdentifier>{da736281-4e57-4f4b-8594-c55e580f9f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Deferred shading\Lighting">
+      <UniqueIdentifier>{a416bf3d-76b9-4e01-aaf2-284b44cfefe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Light heat map">
+      <UniqueIdentifier>{7d6615f5-55eb-4cd5-9de4-00e9d9c35925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Depth optimization">
+      <UniqueIdentifier>{e9004b57-48be-42ca-ad93-ed37e975d96f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Quads">
+      <UniqueIdentifier>{55475c43-9eab-4d88-b5a6-2e5dfa33b377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Simple shading">
+      <UniqueIdentifier>{feeb8256-1119-48bb-aade-2da7f7de7871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Tiled shading">
+      <UniqueIdentifier>{8974897f-4b75-4fcb-856c-0963141600aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Tiled shading\Tiled Deferred">
+      <UniqueIdentifier>{47f83003-6949-4da5-8dc8-f5da5aeb3696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Tiled shading\Tiled Forward">
+      <UniqueIdentifier>{61cd4cba-4421-40ce-aba2-1eec1a73e4c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Affected tiles">
+      <UniqueIdentifier>{2d55aaa0-8bac-4ad6-809f-67f0fc58135c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Timers">
+      <UniqueIdentifier>{f3d13943-3205-4e8e-9e5c-dd69e9db0b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Timers">
+      <UniqueIdentifier>{b11c4961-e79f-430d-99de-cdfbcd480ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{df94132b-af1c-4e8f-a86e-9ffdae70d430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Buffers">
+      <UniqueIdentifier>{9e42b992-fe12-4408-9a86-a3f9addd78e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Buffers">
+      <UniqueIdentifier>{ccfee078-6b9d-4fde-926f-bc6eb6da2d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shaders">
+      <UniqueIdentifier>{716d29fe-56f8-4df3-8f20-37c9c15b4a09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\utils\timers\PerformanceTimer.cpp">
+      <Filter>Source Files\Timers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\textures\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\camera\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\buffers\g-buffer\GBuffer.cpp">
+      <Filter>Source Files\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lighting\tiled\Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shader\Shader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shader\ShaderProgram.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\objloader\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ECL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\timers\Win32ApiWrapper.h">
+      <Filter>Header Files\Timers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\timers\PerformanceTimer.h">
+      <Filter>Header Files\Timers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\textures\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scene\camera\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\buffers\g-buffer\GBuffer.h">
+      <Filter>Header Files\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\configuration\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\configuration\Enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\configuration\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\collision\SSBB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lighting\tiled\Grid.h">
+      <Filter>Header Files\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lighting\lights\PointLight.h">
+      <Filter>Header Files\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaders\Shader.h">
+      <Filter>Header Files\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaders\ShaderProgram.h">
+      <Filter>Header Files\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scene\objloader\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\buffers\ubo\Buffer.h">
+      <Filter>Header Files\Buffers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\stencil_vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\affected_tiles_frag.glsl">
+      <Filter>Shaders\Affected tiles</Filter>
+    </None>
+    <None Include="shaders\mrt_vert.glsl">
+      <Filter>Shaders\Deferred shading\Multiple Render Targets</Filter>
+    </None>
+    <None Include="shaders\mrt_frag.glsl">
+      <Filter>Shaders\Deferred shading\Multiple Render Targets</Filter>
+    </None>
+    <None Include="shaders\deferred_vert.glsl">
+      <Filter>Shaders\Deferred shading\Lighting</Filter>
+    </None>
+    <None Include="shaders\deferred_frag.glsl">
+      <Filter>Shaders\Deferred shading\Lighting</Filter>
+    </None>
+    <None Include="shaders\light_heat_map_frag.glsl">
+      <Filter>Shaders\Light heat map</Filter>
+    </None>
+    <None Include="shaders\minmaxdepth.glsl">
+      <Filter>Shaders\Depth optimization</Filter>
+    </None>
+    <None Include="shaders\quad_vert.glsl">
+      <Filter>Shaders\Quads</Filter>
+    </None>
+    <None Include="shaders\quad_frag.glsl">
+      <Filter>Shaders\Quads</Filter>
+    </None>
+    <None Include="shaders\quad_depth_vert.glsl">
+      <Filter>Shaders\Quads</Filter>
+    </None>
+    <None Include="shaders\quad_depth_frag.glsl">
+      <Filter>Shaders\Quads</Filter>
+    </None>
+    <None Include="shaders\simple_vert.glsl">
+      <Filter>Shaders\Simple shading</Filter>
+    </None>
+    <None Include="shaders\simple_frag.glsl">
+      <Filter>Shaders\Simple shading</Filter>
+    </None>
+    <None Include="shaders\tiled_deferred_frag.glsl">
+      <Filter>Shaders\Tiled shading\Tiled Deferred</Filter>
+    </None>
+    <None Include="shaders\tiled_forward_frag.glsl">
+      <Filter>Shaders\Tiled shading\Tiled Forward</Filter>
+    </None>
+    <None Include="shaders\tiled_forward_vert.glsl">
+      <Filter>Shaders\Tiled shading\Tiled Forward</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Effiecient-computation-of-lighting.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
