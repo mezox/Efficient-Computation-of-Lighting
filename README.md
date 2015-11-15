@@ -5,3 +5,16 @@ This bachelor's thesis deals with efficient computation of lighting in graphics 
 
 
 ![Scene with 1000 lights](http://i.imgur.com/mkLe29u.jpg)
+
+Illustration of G-Buffer data when using Tiled Deferred approach:
+G-buffer holds data:
+* diffuse tex
+* specular tex
+* viewspace normals
+* viewspace positions
+* depth buffer
+
+Also on screen
+* downsampled depthbuffer(minimum depth per tile)
+![G-Buffer](http://i.imgur.com/GqGLjOL.jpg)
+
