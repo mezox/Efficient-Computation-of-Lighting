@@ -18,3 +18,5 @@ Also on screen
 * downsampled depthbuffer(minimum depth per tile)
 ![G-Buffer](http://i.imgur.com/GqGLjOL.jpg)
 
+Visualisation of tiles affected by lights:
+![Tiles with lighting](http://i.imgur.com/FHdD3U0.png)
